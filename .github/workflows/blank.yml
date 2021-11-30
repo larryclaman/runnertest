@@ -50,5 +50,5 @@ jobs:
       - name: 'Run Azure CLI commands'
         run: |
           az account show
-          az group list
-          az resource list
+          az group list -o table
+          az resource list -o table
